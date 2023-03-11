@@ -45,13 +45,13 @@ jobs:
           plugin_languages: yes
           plugin_languages_indepth: yes
 
-          # plugin_music: yes
-          # plugin_music_provider: lastfm
-          # plugin_music_token: ${{ secrets.LASTFM_TOKEN }}
-          # plugin_music_user: RuiNtD
+          plugin_music: yes
+          plugin_music_provider: lastfm
+          plugin_music_token: ${{ secrets.LASTFM_TOKEN }}
+          plugin_music_user: RuiNtD
 
-          # plugin_wakatime: yes
-          # plugin_wakatime_token: ${{ secrets.WAKATIME_TOKEN }}
+          plugin_wakatime: yes
+          plugin_wakatime_token: ${{ secrets.WAKATIME_TOKEN }}
 
       # - name: Splatoon Metrics
       #   uses: lowlighter/metrics@latest
