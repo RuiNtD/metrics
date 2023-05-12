@@ -68,7 +68,7 @@ jobs:
       #     # plugin_splatoon_statink: yes
       #     # plugin_splatoon_statink_token: ${{ secrets.SPLATOON_STATINK_TOKEN }}
 
-      - run: sudo mv /metrics_renders/* ./_site
+      - run: sudo mv /metrics_renders/* ./_site/metrics
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
 
