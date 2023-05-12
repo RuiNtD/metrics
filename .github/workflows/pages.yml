@@ -53,20 +53,18 @@ jobs:
           plugin_wakatime: yes
           plugin_wakatime_token: ${{ secrets.WAKATIME_TOKEN }}
 
-      # - name: Splatoon Metrics
-      #   uses: lowlighter/metrics@latest
-      #   with:
-      #     token: ${{ secrets.METRICS_TOKEN }}
-      #     output_action: none
-      #     filename: splatoon.png
-      #     config_output: png
+      - name: Splatoon Metrics
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          output_action: none
+          filename: splatoon.png
+          config_output: png
 
-      #     base: ""
+          base: ""
 
-      #     plugin_splatoon: yes
-      #     plugin_splatoon_token: ${{ secrets.SPLATOON_TOKEN }}
-      #     # plugin_splatoon_statink: yes
-      #     # plugin_splatoon_statink_token: ${{ secrets.SPLATOON_STATINK_TOKEN }}
+          plugin_splatoon: yes
+          plugin_splatoon_token: ${{ secrets.SPLATOON_TOKEN }}
 
       - name: Move Metrics to site
         run: |
