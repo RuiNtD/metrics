@@ -1,1 +1,0 @@
-# ruintd.github.io
