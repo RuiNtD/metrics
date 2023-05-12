@@ -56,7 +56,7 @@ jobs:
       - name: Splatoon Metrics
         uses: lowlighter/metrics@latest
         with:
-          token: ${{ secrets.METRICS_TOKEN }}
+          token: NOT_NEEDED
           output_action: none
           filename: splatoon.png
           config_output: png
