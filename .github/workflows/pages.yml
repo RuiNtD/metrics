@@ -67,9 +67,7 @@ jobs:
           plugin_splatoon_token: ${{ secrets.SPLATOON_TOKEN }}
 
       - name: Move Metrics to site
-        run: |
-          sudo mkdir ./_site/metrics
-          sudo mv /metrics_renders/* ./_site/metrics
+        run: sudo mv /metrics_renders/* ./_site
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
 
